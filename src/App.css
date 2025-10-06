@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --font-geist: "Geist Mono", monospace;
+  --font-funnel: "Funnel Display", sans-serif;
+  --color-primary: #EB9D2A; 
+  /* --color-primaryBg: #E8E9E2; */
+  --color-primaryBg: #2A2B2F;
+  /* --color-primaryBorder: #313339; */
+  --color-primaryBorder: #494C54;
+  --color-backGround:#8F9094;
+}
+
+@layer components {
+  .title{
+    @apply text-4xl font-bold font-funnel tracking-tight text-[#F5F5F7];
+  }
+  .subtitle {
+    @apply text-lg font-medium font-funnel text-[#F5F5F7];
+  }
+  .navfont {
+    @apply text-sm font-medium text-[#B0B3B8] font-geist;
+  }
+  .text {
+    @apply font-geist text-[#B0B3B8];
+  }
+  .utility {
+    @apply bg-primaryBg/50
+  }
+}
+
+.heart-hover:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='32' width='32'><text y='24' font-size='24'>❤️</text></svg>") 16 16, auto;
+}
