@@ -2,15 +2,15 @@
 import Navbar from "./Navbar";
 import DesktopIcon from "./DesktopIcon";
 import WindowsSkeleton from "./WindowsSkeleton";
-import Projects from "../pages/Projects";
-import { useLocation } from "react-router-dom";
+// import Projects from "../pages/Projects";
+// import { useLocation } from "react-router-dom";
 import type { ReactNode } from "react";
-import Home from "../pages/Home";
-import Demo from "../pages/Demo";
-import Resume from "../pages/Resume";
-import ClickMe from "./ClickMe";
+// import Home from "../pages/Home";
+// import Demo from "../pages/Demo";
+// import Resume from "../pages/Resume";
+// import ClickMe from "./ClickMe";
 // import Footer from "./Footer";
-import NotFound from "../pages/NotFound";
+// import NotFound from "../pages/NotFound";
 import portBg  from "../assets/bg-2.png";
 
 type LayoutProps = {
@@ -18,17 +18,17 @@ type LayoutProps = {
 }
 
 export default function Layout({children}:LayoutProps) {
-  const { pathname } = useLocation();
-  let Page: ReactNode;
-  switch (pathname) {
-    case '/': Page = <Projects/>; break;
-    case '/home': Page = <Home />; break;
-    case '/projects': Page = <Projects />; break;
-    case '/resume': Page = <Resume />; break;
-    case '/about': Page = <Demo />; break;
-    case '/got-you': Page = <ClickMe />; break;
-    default: Page = <NotFound />;
-  }
+  // const { pathname } = useLocation();
+  // let Page: ReactNode;
+  // switch (pathname) {
+  //   case '/': Page = <Projects/>; break;
+  //   case '/home': Page = <Home />; break;
+  //   case '/projects': Page = <Projects />; break;
+  //   case '/resume': Page = <Resume />; break;
+  //   case '/about': Page = <Demo />; break;
+  //   case '/got-you': Page = <ClickMe />; break;
+  //   default: Page = <NotFound />;
+  // }
 
   return (
     <div
@@ -43,7 +43,8 @@ export default function Layout({children}:LayoutProps) {
         <section>
           <DesktopIcon />
         </section>
-        <WindowsSkeleton>{Page}</WindowsSkeleton>
+        {/* <WindowsSkeleton>{Page}</WindowsSkeleton> */}
+        <WindowsSkeleton>{children}</WindowsSkeleton>
       </div>
 
       {/* <footer className="flex items-center justify-center text-center pt-12 pb-10 md:pt-48 md:pb-20">
