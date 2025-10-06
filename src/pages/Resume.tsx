@@ -1,5 +1,6 @@
 import { DownloadIcon, MailboxIcon } from "@phosphor-icons/react";
 import Footer from "../components/Footer";
+import bg2 from "../assets/bg-2.png";
 
 export default function Resume() {
   const RareVsPointers = [
@@ -28,7 +29,21 @@ export default function Resume() {
       {/* Header */}
       <div className="timeline__wrap flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <p className="title text-2xl font-bold">Journey</p>
-        <button
+        <a href={bg2} download>
+          <button
+            className="primary flex flex-row items-center gap-2 px-6 py-2 rounded-md 
+              shadow-[0_4px_0_0_rgba(235,157,42,0.4)] 
+              transition-transform duration-150
+              hover:cursor-pointer
+              hover:-translate-y-1 hover:shadow-[0_6px_0_0_rgba(235,157,42,0.4)]
+              active:translate-y-0 active:shadow-[0_4px_0_0_rgba(235,157,42,0.4)]
+              bg-primary text-white text-sm sm:text-base"
+          >
+            <DownloadIcon className="subtitle" size={20} weight="regular" />
+            <span className="subtitle">Download</span>
+          </button>
+        </a>
+        {/* <button
           className="primary flex flex-row items-center gap-2 px-6 py-2 rounded-md 
             shadow-[0_4px_0_0_rgba(235,157,42,0.4)] 
             transition-transform duration-150
@@ -39,7 +54,7 @@ export default function Resume() {
         >
           <DownloadIcon className="subtitle" size={20} weight="regular" />
           <span className="subtitle">Download</span>
-        </button>
+        </button> */}
       </div>
 
       {/* Contact */}

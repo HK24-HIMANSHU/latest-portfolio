@@ -9,15 +9,15 @@ export default function DesktopIcon(){
                 <Link to='/projects'>
                     <div className="desktopIcon__resume flex flex-col items-center">
                         {
-                            pathname==='/projects' ? <FolderOpen className='text' size={32} weight="duotone" /> : <Folder className='text' size={32} weight="duotone" />
+                            pathname==='/projects' ? <FolderOpen className='text-white' size={32} weight="duotone" /> : <Folder className='text' size={32} weight="duotone" />
                         }
-                        <p className='text'>Projects</p>
+                        <p className={`${pathname=='/projects'?'text-white text':'text'}`}>Projects</p>
                     </div>
                 </Link>
                 <Link to ='/resume'>
                     <div className="desktopIcon__resume flex flex-col items-center">
-                        <FileMd className='text' size={32} />
-                        <p className='text'>Resume.md</p>
+                        <FileMd className={`${pathname=='/resume'?'text-white text':'text'}`} size={32} />
+                        <p className={`${pathname=='/resume'?'text-white text':'text'}`}>Resume.md</p>
                     </div>
                 </Link>
                 {/* <Link to='/about'>
@@ -28,8 +28,8 @@ export default function DesktopIcon(){
                 </Link> */}
                 <Link to='/got-you'>
                     <div className="desktopIcon__resume flex flex-col items-center">
-                        <FilePy className='text' size={32} />
-                        <p className='text'>clickMe.py</p>
+                        <FilePy className={`${pathname=='/got-you'?'text-white text':'text'}`} size={32} />
+                        <p className={`${pathname=='/got-you'?'text-white text':'text'}`}>clickMe.py</p>
                     </div>
                 </Link>
             </div>

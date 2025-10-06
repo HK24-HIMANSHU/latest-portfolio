@@ -15,7 +15,7 @@ export default function SecondaryButton({label,logo,onClick}:primaryBtnProp){
                 hover: cursor-pointer
                 hover:-translate-y-1 hover:shadow-[0_6px_0_0_rgba(97,101,111,0.4)]
                 active:translate-y-0 active:shadow-[0_4px_0_0_rgba(97,101,111,0.4)]
-                flex flex-row flex-wrap bg-backGround"
+                flex flex-row flex-nowrap bg-backGround"
             >
                 {logo}
                 <p className="subtitle text-white">{label}</p>

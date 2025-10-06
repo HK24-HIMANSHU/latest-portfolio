@@ -15,7 +15,7 @@ export default function PrimaryButton({label,logo,onClick}:primaryBtnProp){
                 hover: cursor-pointer
                 hover:-translate-y-1 hover:shadow-[0_6px_0_0_rgba(235,157,42,0.4)]
                 active:translate-y-0 active:shadow-[0_4px_0_0_rgba(235,157,42,0.4)]
-                flex flex-row flex-wrap bg-primary"
+                flex flex-row flex-nowrap bg-primary"
             >
                 {logo}
                 <p className="subtitle">{label}</p>
