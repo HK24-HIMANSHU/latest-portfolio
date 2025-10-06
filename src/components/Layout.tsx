@@ -13,8 +13,11 @@ import ClickMe from "./ClickMe";
 import NotFound from "../pages/NotFound";
 import portBg  from "../assets/bg-2.png";
 
+type LayoutProps = {
+  children?: ReactNode;
+}
 
-export default function Layout() {
+export default function Layout({children}:LayoutProps) {
   const { pathname } = useLocation();
   let Page: ReactNode;
   switch (pathname) {
