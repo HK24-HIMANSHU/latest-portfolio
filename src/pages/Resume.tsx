@@ -1,6 +1,6 @@
 import { DownloadIcon, MailboxIcon } from "@phosphor-icons/react";
 import Footer from "../components/Footer";
-import bg2 from "../assets/bg-2.png";
+import bg2 from "../assets/Himanshu's Resume.pdf";
 
 export default function Resume() {
   const RareVsPointers = [
