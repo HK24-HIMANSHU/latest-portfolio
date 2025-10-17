@@ -6,6 +6,7 @@ import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Layout from './components/Layout';
 import ClickMe from './components/ClickMe';
+import Mail from './pages/Mail';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
               <Route path="/resume" element={<Resume />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/got-you" element={<ClickMe />} />
+              <Route path="/sent-msg" element={<Mail/>} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
