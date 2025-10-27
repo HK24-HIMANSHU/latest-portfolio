@@ -85,7 +85,7 @@ export default function Resume() {
         <div className="exp-1-wrap py-4">
           <div className="pointer-wrap flex flex-col sm:flex-row justify-between gap-2">
             <p className="text font-medium">
-              Software Engineer @ RareVS Consulting (
+              Software Engineer - 2 @ RareVS Consulting (
               <a
                 className="text-primary hover:underline"
                 href="https://ifundcities.com"
