@@ -10,7 +10,7 @@ export const projectInfo = [
     "name": "Portfolio",
     "description": "A personal portfolio website inspired by Windows OS, featuring a visually engaging desktop-like interface. Built with React, Tailwind CSS, and Context API to showcase projects, resume, and interactive UI elements.",
     "github": "https://github.com/HK24-HIMANSHU/latest-portfolio",
-    "live": "https://latest-portfolio-inky-theta.vercel.app",
+    "live": "https://himanshu-24.vercel.app",
     "icon": "UserFocus"
   },
   {
